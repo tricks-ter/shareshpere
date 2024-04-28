@@ -13,10 +13,10 @@ using System.Data.SqlClient;
 
 namespace shareshpere
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
 
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -42,9 +42,9 @@ namespace shareshpere
 
                 SqlDataAdapter sda = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
-                Console.WriteLine(sda);
+                
                 sda.Fill(dt);
-                Console.WriteLine(dt);
+                
 
                 if (dt.Rows.Count > 0)
                 {
@@ -83,6 +83,11 @@ namespace shareshpere
             Register R1 = new Register();
             this.Hide();
             R1.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
