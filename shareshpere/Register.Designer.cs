@@ -37,6 +37,8 @@
             this.password = new System.Windows.Forms.TextBox();
             this.password_con = new System.Windows.Forms.TextBox();
             this.Submit = new System.Windows.Forms.Button();
+            this.loginpage = new System.Windows.Forms.Button();
+            this.dash = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ul
@@ -88,7 +90,7 @@
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(167, 179);
+            this.email.Location = new System.Drawing.Point(167, 169);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(325, 26);
             this.email.TabIndex = 5;
@@ -117,11 +119,34 @@
             this.Submit.UseVisualStyleBackColor = true;
             this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
+            // loginpage
+            // 
+            this.loginpage.Location = new System.Drawing.Point(684, 138);
+            this.loginpage.Name = "loginpage";
+            this.loginpage.Size = new System.Drawing.Size(75, 37);
+            this.loginpage.TabIndex = 9;
+            this.loginpage.Text = "login";
+            this.loginpage.UseVisualStyleBackColor = true;
+            this.loginpage.Click += new System.EventHandler(this.loginpage_Click);
+            // 
+            // dash
+            // 
+            this.dash.Location = new System.Drawing.Point(612, 217);
+            this.dash.Name = "dash";
+            this.dash.Size = new System.Drawing.Size(176, 76);
+            this.dash.TabIndex = 10;
+            this.dash.Text = "Dashboard";
+            this.dash.UseVisualStyleBackColor = true;
+            this.dash.Click += new System.EventHandler(this.dash_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dash);
+            this.Controls.Add(this.loginpage);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.password_con);
             this.Controls.Add(this.password);
@@ -149,5 +174,7 @@
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox password_con;
         private System.Windows.Forms.Button Submit;
+        private System.Windows.Forms.Button loginpage;
+        private System.Windows.Forms.Button dash;
     }
 }

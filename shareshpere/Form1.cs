@@ -85,9 +85,7 @@ namespace shareshpere
             R1.Show();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+       
 
-        }
     }
 }

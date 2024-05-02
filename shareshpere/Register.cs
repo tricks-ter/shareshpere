@@ -52,6 +52,10 @@ namespace shareshpere
                     email.Clear();
                     password.Clear();
                     password_con.Clear();
+
+                    MessageBox.Show("User successfully created", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    
                 }
                 else
                 {
@@ -69,7 +73,18 @@ namespace shareshpere
             }
         }
 
+        private void loginpage_Click(object sender, EventArgs e)
+        {
+            shareshpere.Login R2 = new Login();
+            this.Hide();
+            R2.Show();
+        }
 
-
+        private void dash_Click(object sender, EventArgs e)
+        {
+            shareshpere.Dashboard Du = new Dashboard();
+            this.Hide();
+            Du.Show();
+        }
     }
 }
