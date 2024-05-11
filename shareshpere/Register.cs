@@ -86,5 +86,10 @@ namespace shareshpere
             this.Hide();
             Du.Show();
         }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,7 +45,8 @@
             // 
             this.ul.AutoSize = true;
             this.ul.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ul.Location = new System.Drawing.Point(158, 41);
+            this.ul.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ul.Location = new System.Drawing.Point(162, 58);
             this.ul.Name = "ul";
             this.ul.Size = new System.Drawing.Size(129, 25);
             this.ul.TabIndex = 0;
@@ -55,6 +56,7 @@
             // 
             this.el.AutoSize = true;
             this.el.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.el.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.el.Location = new System.Drawing.Point(162, 125);
             this.el.Name = "el";
             this.el.Size = new System.Drawing.Size(78, 25);
@@ -65,6 +67,7 @@
             // 
             this.pl.AutoSize = true;
             this.pl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.pl.Location = new System.Drawing.Point(162, 208);
             this.pl.Name = "pl";
             this.pl.Size = new System.Drawing.Size(125, 25);
@@ -75,7 +78,8 @@
             // 
             this.cl.AutoSize = true;
             this.cl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cl.Location = new System.Drawing.Point(158, 281);
+            this.cl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cl.Location = new System.Drawing.Point(162, 282);
             this.cl.Name = "cl";
             this.cl.Size = new System.Drawing.Size(200, 25);
             this.cl.TabIndex = 3;
@@ -90,21 +94,21 @@
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(167, 169);
+            this.email.Location = new System.Drawing.Point(167, 162);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(325, 26);
             this.email.TabIndex = 5;
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(167, 252);
+            this.password.Location = new System.Drawing.Point(167, 242);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(325, 26);
             this.password.TabIndex = 6;
             // 
             // password_con
             // 
-            this.password_con.Location = new System.Drawing.Point(167, 326);
+            this.password_con.Location = new System.Drawing.Point(167, 320);
             this.password_con.Name = "password_con";
             this.password_con.Size = new System.Drawing.Size(325, 26);
             this.password_con.TabIndex = 7;
@@ -121,7 +125,7 @@
             // 
             // loginpage
             // 
-            this.loginpage.Location = new System.Drawing.Point(684, 138);
+            this.loginpage.Location = new System.Drawing.Point(713, 12);
             this.loginpage.Name = "loginpage";
             this.loginpage.Size = new System.Drawing.Size(75, 37);
             this.loginpage.TabIndex = 9;
@@ -158,6 +162,7 @@
             this.Controls.Add(this.ul);
             this.Name = "Register";
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

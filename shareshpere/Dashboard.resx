@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnHam.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAARpJREFUWEft1kFOwkAYhuHewAQUAiIhkOhxcKVuYE3UlSS4U+MtvIJncoUsXOiC
+        E+D7Jf2bOhmSZmpnw3zJk5R02n86w0ybpaTUSBt3OR1HzQk22OU+cYzgXOKtojMsYcXNA3TOd43PFEXm
+        eK9ohEe4HVhB53zX+MwQnFP8wIp/o4+o0XA/53SckuLLAFoxWra19omQDFFeKdqsWvDmBr61GqqHF1hx
+        c4sLqM01iuiHe5M6qnTgCo1GU6ANyoqvsXcKmop2TG3Rek9Ef2Om/EvGeMUTor/tVHwL+xd/oYNG4n6Q
+        aB3rya24ucc5ym1DqWYR95OsCw2724EFJii3DfXnk8wXzbmG3Yp/4AhRoznXsOvJoxdPOYRk2S/ZQY52
+        bIq3mwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

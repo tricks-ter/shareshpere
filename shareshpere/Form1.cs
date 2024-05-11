@@ -85,7 +85,9 @@ namespace shareshpere
             R1.Show();
         }
 
-       
+        private void Login_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
