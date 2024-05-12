@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.signup = new System.Windows.Forms.Button();
             this.forgot_pass = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // user
@@ -111,12 +112,23 @@
             this.forgot_pass.Text = "Forgot password?";
             this.forgot_pass.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(92, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 32);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.forgot_pass);
             this.Controls.Add(this.signup);
             this.Controls.Add(this.label2);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button signup;
         private System.Windows.Forms.Button forgot_pass;
+        private System.Windows.Forms.Button button1;
     }
 }
 

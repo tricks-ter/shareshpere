@@ -14,10 +14,21 @@ namespace shareshpere
     {
         fromdashboard dash;
         bool sidebarExapand = false;
+        private Panel pnTop;
+        fromusers users;
+        fromproject project;
+
         public Dashboard()
         {
             InitializeComponent();
+            pnTop = new Panel();
         }
+
+       
+
+
+
+
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
@@ -80,7 +91,73 @@ namespace shareshpere
             {
                 dash = new fromdashboard();
                 dash.FormClosed += Dashboard_FromClosed;
+                dash.MdiParent = this;
+                dash.Dock = DockStyle.Fill;
+                dash.Show();
+
             }
+            else
+            {
+                dash.Activate();
+            }
+            
+
+
+        }
+        private void Dashboard_FromClosed(object sender, FormClosedEventArgs e)
+        {
+             dash = null; 
+        }
+
+        private void btn_user_Click(object sender, EventArgs e)
+        {
+            if (users == null)
+            {
+                users = new fromusers();
+                users.FormClosed += Users_FromClosed;
+                users.MdiParent = this;
+                users.Dock = DockStyle.Fill;
+                users.Show();
+
+            }
+            else
+            {
+                users.Activate();
+            }
+        }
+        private void Users_FromClosed(object sender, FormClosedEventArgs e)
+        {
+            users = null;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (project == null)
+            {
+                project = new fromproject();
+                project.FormClosed += Project_FromClosed;
+                project.MdiParent = this;
+                project.Dock = DockStyle.Fill;
+                project.Show();
+
+            }
+            else
+            {
+                project.Activate();
+            }
+        }
+        private void Project_FromClosed(object sender, FormClosedEventArgs e)
+        {
+            users = null;
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            UserSessionManager.Instance.ClearSession();
+            Login log = new Login();
+            this.Hide();
+            log.Show();
         }
     }
 }
+

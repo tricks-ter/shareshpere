@@ -28,73 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.poisonPanel1 = new ReaLTaiizor.Controls.PoisonPanel();
-            this.aloneTextBox1 = new ReaLTaiizor.Controls.AloneTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.poisonPanel1.SuspendLayout();
+            this.searchbox = new ReaLTaiizor.Controls.AloneTextBox();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.userdata = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.userdata)).BeginInit();
             this.SuspendLayout();
             // 
-            // poisonPanel1
+            // searchbox
             // 
-            this.poisonPanel1.Controls.Add(this.label1);
-            this.poisonPanel1.Controls.Add(this.aloneTextBox1);
-            this.poisonPanel1.HorizontalScrollbarBarColor = true;
-            this.poisonPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.poisonPanel1.HorizontalScrollbarSize = 10;
-            this.poisonPanel1.Location = new System.Drawing.Point(12, 12);
-            this.poisonPanel1.Name = "poisonPanel1";
-            this.poisonPanel1.Size = new System.Drawing.Size(689, 458);
-            this.poisonPanel1.TabIndex = 0;
-            this.poisonPanel1.VerticalScrollbarBarColor = true;
-            this.poisonPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.poisonPanel1.VerticalScrollbarSize = 10;
+            this.searchbox.BackColor = System.Drawing.Color.Transparent;
+            this.searchbox.EnabledCalc = true;
+            this.searchbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.searchbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.searchbox.Location = new System.Drawing.Point(51, 34);
+            this.searchbox.MaxLength = 32767;
+            this.searchbox.MultiLine = false;
+            this.searchbox.Name = "searchbox";
+            this.searchbox.ReadOnly = false;
+            this.searchbox.Size = new System.Drawing.Size(441, 42);
+            this.searchbox.TabIndex = 0;
+            this.searchbox.Text = "Search....";
+            this.searchbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.searchbox.UseSystemPasswordChar = false;
             // 
-            // aloneTextBox1
+            // btn_search
             // 
-            this.aloneTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.aloneTextBox1.EnabledCalc = true;
-            this.aloneTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.aloneTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
-            this.aloneTextBox1.Location = new System.Drawing.Point(22, 15);
-            this.aloneTextBox1.MaxLength = 32767;
-            this.aloneTextBox1.MultiLine = false;
-            this.aloneTextBox1.Name = "aloneTextBox1";
-            this.aloneTextBox1.ReadOnly = false;
-            this.aloneTextBox1.Size = new System.Drawing.Size(389, 58);
-            this.aloneTextBox1.TabIndex = 2;
-            this.aloneTextBox1.Text = "aloneTextBox1";
-            this.aloneTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.aloneTextBox1.UseSystemPasswordChar = false;
+            this.btn_search.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_search.Image = global::shareshpere.Properties.Resources.icons8_search_502;
+            this.btn_search.Location = new System.Drawing.Point(555, 19);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(89, 57);
+            this.btn_search.TabIndex = 1;
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
-            // label1
+            // userdata
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(427, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 38);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.userdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.userdata.Location = new System.Drawing.Point(20, 109);
+            this.userdata.Name = "userdata";
+            this.userdata.RowHeadersWidth = 62;
+            this.userdata.RowTemplate.Height = 28;
+            this.userdata.Size = new System.Drawing.Size(1038, 427);
+            this.userdata.TabIndex = 2;
             // 
             // fromusers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 482);
-            this.Controls.Add(this.poisonPanel1);
+            this.ClientSize = new System.Drawing.Size(1080, 566);
+            this.Controls.Add(this.userdata);
+            this.Controls.Add(this.btn_search);
+            this.Controls.Add(this.searchbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fromusers";
             this.Text = "fromusers";
-            this.poisonPanel1.ResumeLayout(false);
-            this.poisonPanel1.PerformLayout();
+            this.Load += new System.EventHandler(this.fromusers_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.userdata)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ReaLTaiizor.Controls.PoisonPanel poisonPanel1;
-        private ReaLTaiizor.Controls.AloneTextBox aloneTextBox1;
-        private System.Windows.Forms.Label label1;
+        private ReaLTaiizor.Controls.AloneTextBox searchbox;
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.DataGridView userdata;
     }
 }

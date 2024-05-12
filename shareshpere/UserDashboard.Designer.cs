@@ -1,6 +1,6 @@
 ﻿namespace shareshpere
 {
-    partial class Dashboard
+    partial class UserDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.Title = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.pnusers = new System.Windows.Forms.Panel();
             this.btn_user = new System.Windows.Forms.Button();
             this.pnproject = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_project = new System.Windows.Forms.Button();
             this.pnlogout = new System.Windows.Forms.Panel();
             this.btn_logout = new System.Windows.Forms.Button();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
@@ -205,29 +205,29 @@
             // 
             // pnproject
             // 
-            this.pnproject.Controls.Add(this.button2);
+            this.pnproject.Controls.Add(this.btn_project);
             this.pnproject.Location = new System.Drawing.Point(0, 245);
             this.pnproject.Margin = new System.Windows.Forms.Padding(0, 10, 3, 10);
             this.pnproject.Name = "pnproject";
             this.pnproject.Size = new System.Drawing.Size(265, 65);
             this.pnproject.TabIndex = 3;
             // 
-            // button2
+            // btn_project
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::shareshpere.Properties.Resources.icons8_project_32__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-12, -36);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(294, 118);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "                Project";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_project.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.btn_project.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_project.ForeColor = System.Drawing.Color.White;
+            this.btn_project.Image = global::shareshpere.Properties.Resources.icons8_project_32__1_;
+            this.btn_project.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_project.Location = new System.Drawing.Point(-12, -36);
+            this.btn_project.Name = "btn_project";
+            this.btn_project.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btn_project.Size = new System.Drawing.Size(294, 118);
+            this.btn_project.TabIndex = 2;
+            this.btn_project.Text = "                Project";
+            this.btn_project.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_project.UseVisualStyleBackColor = false;
+            this.btn_project.Click += new System.EventHandler(this.btn_project_Click);
             // 
             // pnlogout
             // 
@@ -258,9 +258,8 @@
             // sidebarTransition
             // 
             this.sidebarTransition.Interval = 10;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
-            // Dashboard
+            // UserDashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(973, 539);
@@ -269,10 +268,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.IsMdiContainer = true;
-            this.Name = "Dashboard";
+            this.Name = "UserDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
@@ -296,7 +294,7 @@
         private System.Windows.Forms.Button btn_dashboard;
         private System.Windows.Forms.Panel pndashboard;
         private System.Windows.Forms.Panel pnproject;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_project;
         private System.Windows.Forms.Panel pnusers;
         private System.Windows.Forms.Button btn_user;
         private System.Windows.Forms.Panel pnlogout;
