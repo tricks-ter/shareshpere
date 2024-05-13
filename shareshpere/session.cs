@@ -29,19 +29,21 @@ namespace shareshpere
     public class UserSession
     {
         
-        public int UserID { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
+        public int userID { get; set; }
+        public string username { get; set; }
+        public string email { get; set; }
+        public string isAdmin { get; set; }
 
-        
+
         internal UserSession() { }
 
         
         public void ClearSession()
         {
-            UserID = 0;
-            Username = null;
-            Email = null;
+            userID = 0;
+            username = null;
+            email = null;
+            isAdmin = null;
         }
     }
 

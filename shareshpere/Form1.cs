@@ -31,7 +31,7 @@ namespace shareshpere
             {
                 conn.Open();
 
-                string query = "SELECT UserID, Username, Email FROM users WHERE username = @Username AND password = @Password";
+                string query = "SELECT UserID, Username, Email, IsAdmin FROM users WHERE username = @Username AND password = @Password";
                 SqlCommand command = new SqlCommand(query, conn);
                 command.Parameters.AddWithValue("@Username", user_name);
                 command.Parameters.AddWithValue("@Password", user_pass);
@@ -44,16 +44,18 @@ namespace shareshpere
                     int userID = (int)reader["UserID"];
                     string username = (string)reader["Username"];
                     string email = (string)reader["Email"];
+                    string isAdmin = reader["IsAdmin"] == DBNull.Value ? string.Empty : (string)reader["IsAdmin"];
 
-                    
-                    UserSessionManager.Instance.UserID = userID;
-                    UserSessionManager.Instance.Username = username;
-                    UserSessionManager.Instance.Email = email;
 
-                    MessageBox.Show("Login successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    shareshpere.Dashboard Du = new Dashboard();
+                    UserSessionManager.Instance.userID = userID;
+                    UserSessionManager.Instance.username = username;
+                    UserSessionManager.Instance.email = email;
+                    UserSessionManager.Instance.isAdmin = isAdmin;
+
+
+                    Home home = new Home();
                     this.Hide();
-                    Du.Show();
+                    home.Show();
                 }
                 else
                 {
@@ -90,9 +92,16 @@ namespace shareshpere
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UserDashboard use = new UserDashboard();
-            this.Hide();
-            use.Show();
+            
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Hide();
+            home.Show();
+        }
+
+        
     }
 }

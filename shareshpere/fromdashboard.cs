@@ -146,7 +146,7 @@ namespace shareshpere
         private void fromdashboard_Load(object sender, EventArgs e)
         {
             GetNumberOfUsers();
-            usernum.Text = numberOfUsers.ToString();
+            usernum.Text = numberOfUsers.ToString() ;
             int numberOfProjects = GetNumberOfProjects();
             projectnum.Text = numberOfProjects.ToString() + " project have been created!!";
             decimal totalFundsRaised = GetTotalFundsRaised();
@@ -158,6 +158,11 @@ namespace shareshpere
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

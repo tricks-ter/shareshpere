@@ -123,6 +123,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(322, 200);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // fundraised
             // 

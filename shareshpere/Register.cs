@@ -82,12 +82,15 @@ namespace shareshpere
 
         private void dash_Click(object sender, EventArgs e)
         {
-            shareshpere.Dashboard Du = new Dashboard();
-            this.Hide();
-            Du.Show();
+            
         }
 
         private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
