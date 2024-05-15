@@ -34,20 +34,20 @@
             this.Title = new System.Windows.Forms.Label();
             this.btnHam = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.description = new ReaLTaiizor.Controls.DungeonLabel();
             this.paymentpanel = new System.Windows.Forms.Panel();
+            this.money = new ReaLTaiizor.Controls.DungeonTextBox();
             this.dungeonLabel3 = new ReaLTaiizor.Controls.DungeonLabel();
             this.dungeonLabel2 = new ReaLTaiizor.Controls.DungeonLabel();
             this.dungeonLabel4 = new ReaLTaiizor.Controls.DungeonLabel();
             this.nagad = new System.Windows.Forms.PictureBox();
             this.bank = new System.Windows.Forms.PictureBox();
             this.bkash = new System.Windows.Forms.PictureBox();
-            this.description = new ReaLTaiizor.Controls.DungeonLabel();
             this.project_name = new ReaLTaiizor.Controls.BigLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.proID = new ReaLTaiizor.Controls.DungeonLabel();
             this.donet = new ReaLTaiizor.Controls.DungeonButtonLeft();
             this.projectimg = new ReaLTaiizor.Controls.HopePictureBox();
-            this.money = new ReaLTaiizor.Controls.DungeonTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
             this.panel2.SuspendLayout();
@@ -117,12 +117,25 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.paymentpanel);
             this.panel2.Controls.Add(this.description);
             this.panel2.Location = new System.Drawing.Point(149, 358);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(770, 219);
             this.panel2.TabIndex = 2;
+            // 
+            // description
+            // 
+            this.description.AutoSize = true;
+            this.description.BackColor = System.Drawing.Color.Transparent;
+            this.description.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.description.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.description.Location = new System.Drawing.Point(0, 0);
+            this.description.MaximumSize = new System.Drawing.Size(770, 219);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(766, 219);
+            this.description.TabIndex = 0;
+            this.description.Text = resources.GetString("description.Text");
             // 
             // paymentpanel
             // 
@@ -133,10 +146,27 @@
             this.paymentpanel.Controls.Add(this.nagad);
             this.paymentpanel.Controls.Add(this.bank);
             this.paymentpanel.Controls.Add(this.bkash);
-            this.paymentpanel.Location = new System.Drawing.Point(104, 3);
+            this.paymentpanel.Location = new System.Drawing.Point(261, 358);
             this.paymentpanel.Name = "paymentpanel";
             this.paymentpanel.Size = new System.Drawing.Size(491, 216);
             this.paymentpanel.TabIndex = 1;
+            // 
+            // money
+            // 
+            this.money.BackColor = System.Drawing.Color.Transparent;
+            this.money.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.money.EdgeColor = System.Drawing.Color.White;
+            this.money.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.money.ForeColor = System.Drawing.Color.DimGray;
+            this.money.Location = new System.Drawing.Point(158, 154);
+            this.money.MaxLength = 32767;
+            this.money.Multiline = false;
+            this.money.Name = "money";
+            this.money.ReadOnly = false;
+            this.money.Size = new System.Drawing.Size(185, 37);
+            this.money.TabIndex = 9;
+            this.money.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.money.UseSystemPasswordChar = false;
             // 
             // dungeonLabel3
             // 
@@ -207,27 +237,16 @@
             this.bkash.TabStop = false;
             this.bkash.Click += new System.EventHandler(this.bkash_Click);
             // 
-            // description
-            // 
-            this.description.AutoSize = true;
-            this.description.BackColor = System.Drawing.Color.Transparent;
-            this.description.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.description.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.description.Location = new System.Drawing.Point(14, 12);
-            this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(122, 30);
-            this.description.TabIndex = 0;
-            this.description.Text = "Description";
-            // 
             // project_name
             // 
             this.project_name.AutoSize = true;
             this.project_name.BackColor = System.Drawing.Color.Transparent;
-            this.project_name.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.project_name.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.project_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.project_name.Location = new System.Drawing.Point(382, 60);
+            this.project_name.Location = new System.Drawing.Point(308, 60);
+            this.project_name.MaximumSize = new System.Drawing.Size(510, 80);
             this.project_name.Name = "project_name";
-            this.project_name.Size = new System.Drawing.Size(317, 67);
+            this.project_name.Size = new System.Drawing.Size(180, 38);
             this.project_name.TabIndex = 3;
             this.project_name.Text = "Project name";
             // 
@@ -244,7 +263,7 @@
             this.proID.BackColor = System.Drawing.Color.Transparent;
             this.proID.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.proID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.proID.Location = new System.Drawing.Point(693, 90);
+            this.proID.Location = new System.Drawing.Point(777, 134);
             this.proID.Name = "proID";
             this.proID.Size = new System.Drawing.Size(101, 30);
             this.proID.TabIndex = 5;
@@ -285,28 +304,12 @@
             this.projectimg.TabStop = false;
             this.projectimg.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             // 
-            // money
-            // 
-            this.money.BackColor = System.Drawing.Color.Transparent;
-            this.money.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.money.EdgeColor = System.Drawing.Color.White;
-            this.money.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.money.ForeColor = System.Drawing.Color.DimGray;
-            this.money.Location = new System.Drawing.Point(158, 154);
-            this.money.MaxLength = 32767;
-            this.money.Multiline = false;
-            this.money.Name = "money";
-            this.money.ReadOnly = false;
-            this.money.Size = new System.Drawing.Size(185, 37);
-            this.money.TabIndex = 9;
-            this.money.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-            this.money.UseSystemPasswordChar = false;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 771);
+            this.Controls.Add(this.paymentpanel);
             this.Controls.Add(this.donet);
             this.Controls.Add(this.proID);
             this.Controls.Add(this.panel3);
